@@ -1,6 +1,6 @@
 /**
 ******************************************************
-*@file:Hollow_Inverted_Half_Byramid.c
+*@fileC:Inverted_Numrical_Half_byramid.c
 *@version:1.0.0
 *@author:Ahmed Mohamed Omar
 *@brief:tasks of Loop and coditions
@@ -20,8 +20,7 @@
 int Loop_Iterator_One;
 int Loop_Iterator_Two;
 int Loop_Iterator_Three;
-int k;
-int Number_count=3;
+int rows;
 /* *************Global variables section end********** */
 
 /* *************Global decelartions section srart****** */
@@ -30,25 +29,30 @@ int Number_count=3;
 
 
 int main()
-{
-    for (Loop_Iterator_One=6; Loop_Iterator_One>=1; Loop_Iterator_One--)
+{   printf("enter number of rows\n");
+    scanf("%i",&rows);
+    for (Loop_Iterator_One=1;Loop_Iterator_One<=rows;Loop_Iterator_One++)
     {
-        if ((1==Loop_Iterator_One)||(6==Loop_Iterator_One))
+        if ((rows==Loop_Iterator_One)||(1==Loop_Iterator_One))
         {
-            for (Loop_Iterator_Two=1; Loop_Iterator_Two<=Loop_Iterator_One; Loop_Iterator_Two++)
+            for (Loop_Iterator_Two=1;Loop_Iterator_Two<=Loop_Iterator_One;Loop_Iterator_Two++)
             {
-                printf("*");
+                printf("%i",Loop_Iterator_Two);
             }
         }
         else
         {
-            printf("*");
-            for (Loop_Iterator_Two=1; Loop_Iterator_Two<=Loop_Iterator_One-2; Loop_Iterator_Two++)
-            {
-                printf(" ");
-            }
-            printf("*");
-
+         for (Loop_Iterator_Two=1;Loop_Iterator_Two<=Loop_Iterator_One;Loop_Iterator_Two++)
+         {
+           if ((Loop_Iterator_One==Loop_Iterator_Two)||(1==Loop_Iterator_Two))
+           {
+                printf("%i",Loop_Iterator_Two);
+           }
+           else
+           {
+               printf(" ");
+           }
+         }
         }
         printf("\n");
     }
@@ -61,5 +65,5 @@ int main()
 ***********************************************************
 user                    date            brief
 ************************************************************
-Ahmed Mohamed Omar   11/28/2022 tasks of Loop and coditions
+Ahmed Mohamed Omar   11/30/2022 tasks of Loop and coditions
 */
