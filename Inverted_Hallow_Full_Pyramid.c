@@ -34,7 +34,7 @@ int main()
     int rows;
     printf("enter number of rows=\n");
     scanf("%i",&rows);
-    for (Loop_Iterator_One=1; Loop_Iterator_One<=rows; Loop_Iterator_One++,k=0)
+    for (Loop_Iterator_One=rows; Loop_Iterator_One>=1; Loop_Iterator_One--,k=0)
     {
         for ( Loop_Iterator_Two=1; Loop_Iterator_Two<=(rows-Loop_Iterator_One); Loop_Iterator_Two++)
         {

@@ -42,7 +42,7 @@ int main()
       }
       while(k!=2*Loop_Iterator_One-1)
       {
-          printf("* ");
+          printf("*");
           ++k;
       }
       printf("\n");
