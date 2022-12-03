@@ -32,31 +32,30 @@ int rows,k;
 
 int main()
 {
-    int i, j, n;
-    printf("Enter value of n : ");
-    scanf("%d", &n);
-    for(i = 1; i <= n; i++)
+    printf("Enter Number of Rows=");
+    scanf("%i",&rows);
+    for (Loop_Iterator_One=1;Loop_Iterator_One<=rows;Loop_Iterator_One++)
     {
-        for(j = i; j < n; j++)
+        for (Loop_Iterator_Two=Loop_Iterator_One;Loop_Iterator_Two<rows;Loop_Iterator_Two++)
         {
             printf(" ");
         }
-        for(j = 1; j <= i; j++)
+        for (Loop_Iterator_Two=1;Loop_Iterator_Two<=Loop_Iterator_One;Loop_Iterator_Two++)
         {
-            if(j == 1 || i == n)
+            if (1==Loop_Iterator_Two||rows==Loop_Iterator_One)
             {
-                printf("%d ", j);
+                printf("%i ",Loop_Iterator_Two);
             }
             else
             {
                 printf(" ");
             }
         }
-        for(j = 1; j < i; j++)
+        for (Loop_Iterator_Two=1;Loop_Iterator_Two<=Loop_Iterator_One;Loop_Iterator_Two++)
         {
-            if(j == i-1 && j < n-1)
+            if ((Loop_Iterator_Two==(Loop_Iterator_One-1))&&(Loop_Iterator_Two<rows-1))
             {
-                printf("%d", j+1);
+                printf("%i",Loop_Iterator_Two);
             }
             else
             {
@@ -65,7 +64,7 @@ int main()
         }
         printf("\n");
     }
-    return 0;
+
 }
 /* *************Sub program section srart****** */
 /* *************Sub program section end******** */
