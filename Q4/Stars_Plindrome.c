@@ -19,7 +19,6 @@
 /* *************Global variables section srart******** */
     int Loop_Iterator_One;
     int Loop_Iterator_Two;
-    int rows;
 /* *************Global variables section end********** */
 
 /* *************Global decelartions section srart****** */
