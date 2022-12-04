@@ -1,6 +1,6 @@
 /**
 ******************************************************
-*@fileC:Half_Plindrome.c
+*@fileC:Alphabet_Half_Plindrome.c
 *@version:1.0.0
 *@author:Ahmed Mohamed Omar
 *@brief:tasks of Loop and coditions
@@ -36,11 +36,11 @@ int main()
     {
         for (Loop_Iterator_Two=1;Loop_Iterator_Two<=Loop_Iterator_One;Loop_Iterator_Two++)
         {
-            printf("%i ",Loop_Iterator_Two);
+            printf("%c ",Loop_Iterator_Two+64);
         }
         for (Loop_Iterator_Two=Loop_Iterator_One-1;Loop_Iterator_Two>0;Loop_Iterator_Two--  )
         {
-            printf("%i ",Loop_Iterator_Two);
+            printf("%c ",Loop_Iterator_Two+64);
         }
         printf("\n");
     }
