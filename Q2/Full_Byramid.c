@@ -38,11 +38,11 @@ int main()
     {
       for ( Loop_Iterator_Two=1;Loop_Iterator_Two<=(rows-Loop_Iterator_One);Loop_Iterator_Two++)
       {
-          printf(" ");
+          printf("  ");
       }
       while(k!=2*Loop_Iterator_One-1)
       {
-          printf("*");
+          printf("* ");
           ++k;
       }
       printf("\n");
