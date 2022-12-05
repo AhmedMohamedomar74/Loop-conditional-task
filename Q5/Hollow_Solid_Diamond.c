@@ -47,7 +47,7 @@ int main()
                 }
             else
             {
-                 printf(" ");
+                    printf("  ");
             }
         }
         printf("\n");
@@ -67,7 +67,7 @@ int main()
                 }
             else
             {
-                 printf(" ");
+                    printf("  ");
             }
         }
         printf("\n");
