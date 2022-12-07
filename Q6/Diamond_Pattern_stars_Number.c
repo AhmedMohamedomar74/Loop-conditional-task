@@ -78,17 +78,6 @@ int main()
     }
 }
 /* *************Sub program section srart****** */
-void test ()
-{
-        for (Loop_Iterator_One=1;Loop_Iterator_One<=5;Loop_Iterator_One++)
-    {
-        printf("%i ",Loop_Iterator_One);
-    }
-    for (Loop_Iterator_One=4;Loop_Iterator_One>=1;Loop_Iterator_One--)
-    {
-        printf("%i ",Loop_Iterator_One);
-    }
-}
 /* *************Sub program section end******** */
 
 
