@@ -19,8 +19,7 @@
 /* *************Global variables section srart******** */
     int Loop_Iterator_One;
     int Loop_Iterator_Two;
-    int rows;
-    int count=1;
+    int Biggest_Number;
 /* *************Global variables section end********** */
 
 /* *************Global decelartions section srart****** */
@@ -30,41 +29,47 @@
 
 
 int main()
-{
-    printf("enter nubmbers of rows");
-    scanf("%i",&rows);
-    for (Loop_Iterator_One=1;Loop_Iterator_One<=rows/2;Loop_Iterator_One++)
+{   printf("Enter the biggest number=");
+    scanf("%i",&Biggest_Number);
+    for (Loop_Iterator_One=1;Loop_Iterator_One<=Biggest_Number;Loop_Iterator_One++)
     {
         for (Loop_Iterator_Two=1;Loop_Iterator_Two<=Loop_Iterator_One;Loop_Iterator_Two++)
         {
-            if (Loop_Iterator_Two<Loop_Iterator_One)
+            if (Loop_Iterator_One==1)
             {
-                printf("%i*",count++);
+                printf("%i",Loop_Iterator_One);
+            }
+            else if (Loop_Iterator_Two==Loop_Iterator_One)
+            {
+                printf("%i",Loop_Iterator_Two);
             }
             else
             {
-                printf("%d",count++);
+                printf("%i*",Loop_Iterator_One);
             }
+
         }
         printf("\n");
     }
-    count=count-(rows/2);
 
-    for (Loop_Iterator_One=(rows/2);Loop_Iterator_One>=1;Loop_Iterator_One--)
+    for (Loop_Iterator_One=Biggest_Number;Loop_Iterator_One>=1;Loop_Iterator_One--)
     {
         for (Loop_Iterator_Two=1;Loop_Iterator_Two<=Loop_Iterator_One;Loop_Iterator_Two++)
         {
-            if (Loop_Iterator_Two<Loop_Iterator_One)
+            if (Loop_Iterator_One==1)
             {
-                printf("%i*",count++);
+                printf("%i",Loop_Iterator_One);
+            }
+            else if (Loop_Iterator_Two==Loop_Iterator_One)
+            {
+                printf("%i",Loop_Iterator_Two);
             }
             else
             {
-                printf("%d",count++);
+                printf("%i*",Loop_Iterator_One);
             }
-        }
 
-        count=(count+1) -(2*Loop_Iterator_One);
+        }
         printf("\n");
     }
 }
